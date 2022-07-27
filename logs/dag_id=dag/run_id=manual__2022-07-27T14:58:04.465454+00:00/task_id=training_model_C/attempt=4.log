@@ -1,0 +1,26 @@
+[2022-07-27 15:07:28,891] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag.training_model_C manual__2022-07-27T14:58:04.465454+00:00 [queued]>
+[2022-07-27 15:07:28,925] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag.training_model_C manual__2022-07-27T14:58:04.465454+00:00 [queued]>
+[2022-07-27 15:07:28,926] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-27 15:07:28,926] {taskinstance.py:1377} INFO - Starting attempt 4 of 4
+[2022-07-27 15:07:28,926] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-27 15:07:28,984] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): training_model_C> on 2022-07-27 14:58:04.465454+00:00
+[2022-07-27 15:07:28,998] {standard_task_runner.py:52} INFO - Started process 1618 to run task
+[2022-07-27 15:07:29,010] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag', 'training_model_C', 'manual__2022-07-27T14:58:04.465454+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmprddndmw5', '--error-file', '/tmp/tmpl5mcyowl']
+[2022-07-27 15:07:29,011] {standard_task_runner.py:80} INFO - Job 49: Subtask training_model_C
+[2022-07-27 15:07:29,242] {task_command.py:371} INFO - Running <TaskInstance: dag.training_model_C manual__2022-07-27T14:58:04.465454+00:00 [running]> on host c054a673cb8f
+[2022-07-27 15:07:29,604] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dag
+AIRFLOW_CTX_TASK_ID=training_model_C
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-27T14:58:04.465454+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-27T14:58:04.465454+00:00
+[2022-07-27 15:07:29,609] {python.py:173} INFO - Done. Returned value was: 8
+[2022-07-27 15:07:29,710] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag, task_id=training_model_C, execution_date=20220727T145804, start_date=20220727T150728, end_date=20220727T150729
+[2022-07-27 15:07:29,803] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-27 15:07:30,001] {dagrun.py:1081} ERROR - Failed to get task '<TaskInstance: dag.training_model_a manual__2022-07-27T14:58:04.465454+00:00 [removed]>' for dag 'dag'. Marking it as removed.
+[2022-07-27 15:07:30,003] {dagrun.py:1081} ERROR - Failed to get task '<TaskInstance: dag.training_model_b manual__2022-07-27T14:58:04.465454+00:00 [removed]>' for dag 'dag'. Marking it as removed.
+[2022-07-27 15:07:30,005] {dagrun.py:1081} ERROR - Failed to get task '<TaskInstance: dag.training_model_c manual__2022-07-27T14:58:04.465454+00:00 [removed]>' for dag 'dag'. Marking it as removed.
+[2022-07-27 15:07:30,050] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
